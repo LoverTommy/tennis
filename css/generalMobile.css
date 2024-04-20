@@ -1,0 +1,216 @@
+@media screen and (max-width: 1200px) {
+    .tournamentStatistics {
+        max-width: 98%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .tournamentStatistics .content .items {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        column-gap: 10%;
+        row-gap: 10%;
+    }
+
+    .tournamentStatistics .content .items .item1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .tournamentStatistics .content .items .item1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .tournamentStatistics .content .items .item1 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .tournamentStatistics .content .items .item1 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .tournamentStatistics .content .items > div .peoples .people {
+        width: 100%;
+    }
+
+    .center {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .news .posts {
+        gap: 5%;
+    }
+
+    .news .posts .item {
+        width: 30%;
+    }
+
+    .news .posts .item img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .tournaments .tournamentsList .item .right {
+        gap: 10px;
+    }
+
+    .tournaments .tournamentsList .item .right .buttons .entry {
+        padding: 8px 69px;
+        font-size: 12px;
+    }
+
+    .tournaments .tournamentsList .item .right .buttons .watch {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .tournaments .tournamentsList .item .right img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tournaments .tournamentsList .item .left img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .tournamentStatistics .content .items {
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 0;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .tournamentStatistics .content .items .item1 {
+        grid-column: 1;
+    }
+
+    .tournamentStatistics .content .items .item1 {
+        grid-column: 1;
+    }
+
+    .tournamentStatistics .content .items .item1 {
+        grid-column: 1;
+    }
+
+    .tournamentStatistics .content .items .item1 {
+        grid-column: 1;
+    }
+
+    .tournamentStatistics .content .items > div .peoples {
+        gap: 10px;
+        max-height: 40px;
+    }
+
+    .tournamentStatistics .content .items > div {
+        gap: 10px;
+    }
+
+
+    header > div a {
+        font-size: 10px;
+    }
+
+    header > div img {
+        height: 34px;
+    }
+
+    header > div {
+        gap: 15px;
+    }
+
+    .tournaments h1 {
+        font-size: 30px;
+    }
+
+    .tournaments .filter > div h4 {
+        font-size: 12px;
+    }
+
+    .tournaments .tournamentsList {
+        align-items: center;
+    }
+
+    .tournaments .tournamentsList .item {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tournaments .tournamentsList .item .right .rules {
+        align-self: start;
+    }
+
+    .news .top {
+        height: 200px;
+    }
+
+    .news .top h2 {
+        font-size: 18px;
+    }
+
+    .news .posts .item img {
+        height: 200px;
+    }
+
+    .news .posts {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .news .posts .item {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header > div a {
+        font-size: 8px;
+    }
+
+    header > div img {
+        height: 20px;
+    }
+
+    header > div {
+        gap: 10px;
+    }
+
+    .tournamentStatistics .content .title span {
+        font-size: 12px;
+    }
+
+    .tournamentStatistics .content .title span:first-child::after {
+        height: 12px;
+    }
+
+    .tournamentStatistics .content .title img {
+        width: 14px;
+        height: 15px;
+    }
+
+    .tournamentStatistics {
+        padding-bottom: 20px;
+    }
+
+    .tournaments {
+        padding-top: 20px;
+    }
+
+    .news .top {
+        padding: 15px;
+    }
+
+    .news .posts .item {
+        width: 100%;
+    }
+}
