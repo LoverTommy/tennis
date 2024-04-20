@@ -1,10 +1,15 @@
-@media screen and (max-width: 1200px) {
-    .tournamentStatistics {
-        max-width: 98%;
-        width: 100%;
-        margin: 0 auto;
+@media screen and (max-width: 1450px) {
+    header {
+        width: 98%;
+        padding: 20px 10px;
     }
 
+    .center {
+        max-width: 98%;
+    }
+} 
+
+@media screen and (max-width: 1200px) {
     .tournamentStatistics .content .items {
         display: grid;
         grid-template-columns: 45% 45%;
@@ -52,6 +57,11 @@
     .news .posts .item img {
         width: 100%;
     }
+
+    header .menu {
+        justify-content: space-around;
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 890px) {
@@ -77,6 +87,24 @@
     .tournaments .tournamentsList .item .left img {
         width: 80px;
         height: 80px;
+    }
+
+    header .menu a {
+        font-size: 12px;
+    }
+
+    header .menu {
+        justify-content: space-between;
+    }
+
+    header .right img {
+        width: 20px;
+        height: 20px;
+    }
+
+    header .logo {
+        width: 60px;
+        height: 40px;
     }
 }
 
@@ -113,19 +141,6 @@
 
     .tournamentStatistics .content .items > div {
         gap: 10px;
-    }
-
-
-    header > div a {
-        font-size: 10px;
-    }
-
-    header > div img {
-        height: 34px;
-    }
-
-    header > div {
-        gap: 15px;
     }
 
     .tournaments h1 {
@@ -170,20 +185,21 @@
     .news .posts .item {
         width: 80%;
     }
+
+    header .menu {
+        display: none;
+    }
+
+    header .right {
+        display: none;
+    }
+
+    header .burgerMenu {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    header > div a {
-        font-size: 8px;
-    }
-
-    header > div img {
-        height: 20px;
-    }
-
-    header > div {
-        gap: 10px;
-    }
 
     .tournamentStatistics .content .title span {
         font-size: 12px;
