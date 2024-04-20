@@ -64,7 +64,7 @@
 }
 
 .tournamentStatistics .content .items {
-    display: none;
+    display: flex;
     gap: 30px;
 }
 

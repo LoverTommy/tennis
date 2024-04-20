@@ -4,9 +4,9 @@ const media = window.matchMedia('(max-width: 1200px)')
 
 openStatistic.addEventListener('click', (eo)=>{
     if(media.matches) {
-        (statistics.style.display === 'grid') ? statistics.style.display='none' : statistics.style.display='grid';
+        (statistics.style.display === 'none') ? statistics.style.display='grid' : statistics.style.display='none';
     }else {
-        (statistics.style.display === 'flex') ? statistics.style.display='none' : statistics.style.display='flex';
+        (statistics.style.display === 'none') ? statistics.style.display='flex' : statistics.style.display='none';
     }
 
 })
