@@ -1,0 +1,211 @@
+@media screen and (max-width: 1450px) {
+    .center {
+        max-width: 98%;
+    }
+
+    .player {
+        width: 100%;
+        column-gap: 10%;
+        grid-template-columns: 60% 30%;
+    }
+
+    .player .playerImage {
+        width: 100%;
+        
+    }
+
+    .details .content {
+        width: 100%;
+        gap: 10%;
+    }
+
+    .lastEvents .slider {
+        width: 92%;
+    }
+} 
+
+
+@media screen and (max-width: 890px) {
+    .player {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .player h1 {
+        order: -2;
+    }
+
+    .player .playerImage {
+        order: -1;
+        width: 300px;
+    }
+
+    .details .content {
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .lastEvents .slider .item .top .left img {
+        width: 70px;
+        height: 40px;
+    }
+
+    .lastEvents .slider .item .top .left .description .name h4 {
+        font-size: 12px;
+    }
+
+    .lastEvents .slider .item .top .left .description .locationData span {
+        font-size: 11px;
+    }
+
+    .lastEvents .slider .item .top .left .description .locationData span:first-child::after {
+        height: 14px;
+    }
+
+    .lastEvents .slider .item .top .left .description .name img {
+        width: 22px;
+        height: 12px;
+    }
+
+    .lastEvents .slider .item .top .right span {
+        padding: 6px 16px;
+        border: 1px blue solid;
+        font-size: 14px;
+    }
+
+    .lastEvents .slider .item .top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lastEvents .slider .item {
+        padding: 30px;
+    }
+
+    .lastEvents .slider .previous, 
+    .lastEvents .slider .next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .lastEvents .slider .previous {
+        left: -20px;
+    }
+
+    .lastEvents .slider .next {
+        right: -20px;
+    }
+
+    .lastEvents .slider .item .bottom .players .playerItem {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .player .description .content {
+        flex-direction: row;
+    }
+
+    .player .description .content > div {
+        flex-direction: column;
+    }
+    
+    .player .description .content > div .description {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        padding: 10px 0px;
+    }
+
+    .player .description .content > div h4 {
+        font-size: 16px;
+    }
+
+    .player .description .buttons h4:last-child {
+        padding: 8px 23.5px;
+    }
+
+    .player .description .content > div:first-child h4 {
+        padding: 20px 54.5px;
+    }
+
+    .player .description .content > div:last-child h4 {
+        border-left: none;
+        padding: 20px 21.5px;
+        border-bottom-left-radius: 0;
+    }
+
+    .player .description .buttons h4:last-child {
+        border-bottom: 1px blue solid;
+    }
+
+    .player .description .content > div:first-child .description {
+        border-top-right-radius: 0;
+        border-top: 0;
+        border-left: 1px blue solid;
+        border-bottom-left-radius: 10px;
+    }
+
+    .player {
+        align-items: center;
+    }
+
+    .details .content {
+        width: 75%;
+    }
+
+    .details {
+        gap: 10px;
+    }
+
+    .details h2 {
+        align-self: center;
+    }
+
+    .details .content > div {
+        padding: 15px 20px;
+    }
+
+    .details .content > div > div h4, .details .content > div > div p {
+        font-size: 12px;
+    }
+
+    .lastEvents .slider .item {
+        padding: 18px;
+        gap: 15px;
+    }
+
+    .lastEvents .slider .item .bottom {
+        gap: 10px;
+    }
+
+    .lastEvents .slider .item .bottom .players .playerItem .left img:first-child {
+        width: 30px;
+        height: 30px;
+    }
+
+    .lastEvents .slider .item .bottom .players .playerItem .left .name {
+        align-items: center;
+    }
+
+    .lastEvents .slider .item .bottom .players .playerItem .left .name img {
+        width: 20px;
+        height: 12px;
+    }
+
+    .lastEvents .slider .item .bottom .players .playerItem .left .name span {
+        font-size: 12px;
+    }
+
+    .lastEvents h4 {
+        align-self: center;
+        text-align: center;
+    }
+
+    .lastEvents .slider .item .bottom h4 {
+        align-self: flex-start;
+    }
+}

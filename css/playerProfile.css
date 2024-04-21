@@ -330,6 +330,7 @@
 .lastEvents .slider .item .bottom .players .playerItem {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .lastEvents .slider .item .bottom .players .playerItem .left img:first-child {
