@@ -111,6 +111,14 @@
     border-top-right-radius: 10px;
 }
 
+.player .description .content > div:last-child .description .rank {
+    margin-left: -10px;
+}
+
+.player .description .content > div:last-child .description .wl {
+    margin-left: -10px;
+}
+
 .player .description .content > div .description > div {
     display: flex;
     flex-direction: column;
@@ -159,7 +167,7 @@
 .details .content {
     display: flex;
     gap: 100px;
-    width: 90%;
+    width: 60%;
 }
 
 .details .content > div {

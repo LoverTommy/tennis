@@ -15,7 +15,7 @@
     }
 
     .details .content {
-        width: 100%;
+        width: 80%;
         gap: 10%;
     }
 
@@ -207,5 +207,29 @@
 
     .lastEvents .slider .item .bottom h4 {
         align-self: flex-start;
+    }
+
+    .lastEvents {
+        padding-top: 50px;
+    }
+
+    .player .description .content > div:last-child .description .rank {
+        margin-left: 0;
+    }
+    
+    .player .description .content > div:last-child .description .wl {
+        margin-left: 0;
+    }
+
+    .player .description .content > div:last-child .description {
+        width: 120px;
+    }
+
+    .player .description .content > div:first-child .description {
+        width: 143px;
+    }
+
+    .player .description .buttons h4:last-child {
+        padding: 8px 25.8px;
     }
 }
