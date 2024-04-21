@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'montserrat';
+    padding-bottom: 100px;
+}
+
+.center {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* player */
+
+.player {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content 1fr;
+    padding-top: 100px;
+    row-gap: 50px;
+    width: min-content;
+    column-gap: 50px;
+}
+
+.player h1 {
+    text-transform: uppercase;
+}
+
+.player .description {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.player .description .buttons {
+    display: flex;
+}
+
+.player .description .buttons h4:first-child {
+    padding: 8px 20px;
+    border: 1px blue solid;
+    width: max-content;
+    border-top-left-radius: 10px;
+    border-right: none;
+    cursor: pointer;
+}
+
+.player .description .buttons h4:last-child {
+    padding: 8px 20px;
+    border: 1px blue solid;
+    width: max-content;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: rgba(126, 126, 223, 0.555);
+    cursor: pointer;
+}
+
+.player .description .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.player .description .content:nth-child(2) {
+    display: none;
+}
+
+.player .description .content > div {
+    display: flex;
+}
+
+.player .description .content > div h4 {
+    font-size: 20px;
+    border: 1px blue solid;
+    height: max-content;
+    border-top: none;
+}
+
+.player .description .content > div:first-child h4 {
+    padding: 20px 50px;
+}
+
+.player .description .content > div:last-child h4 {
+    padding: 20px 25.6px;
+    border-bottom-left-radius: 10px;
+}
+
+.player .description .content > div .description {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    width: 450px;
+    border: 1px blue solid;
+    justify-content: space-evenly;
+    border-left: none;
+}
+
+.player .description .content > div:last-child .description {
+    border-top: none;
+    border-bottom-right-radius: 10px;
+}
+
+.player .description .content > div:first-child .description {
+    border-top-right-radius: 10px;
+}
+
+.player .description .content > div .description > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player .description .content > div .description > div span {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.player .description .content > div .description > div p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.player .playerImage {
+    border: 1px blue solid;
+    width: 300px;
+    height: 350px;
+    grid-column: 2;
+    grid-row: 1/span 2;
+}
+
+.player .playerImage img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* details */
+
+.details {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.details h2 {
+    align-self: flex-start;
+}
+
+.details .content {
+    display: flex;
+    gap: 100px;
+    width: 90%;
+}
+
+.details .content > div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    border: 1px blue solid;
+    border-radius: 10px;
+    padding: 20px 50px;
+}
+
+.details .content > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .content > div > div h4,
+.details .content > div > div p {
+    font-weight: 500;
+}
+
+.details .content .right .links .icons {
+    display: flex;
+    gap: 10px;
+}
+
+.details .content .right .links .icons img {
+    width: 20px;
+    height: 20px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+
+/* lastEvents */
+
+.lastEvents {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.lastEvents h4 {
+    font-size: 24px;
+    align-self: flex-start;
+}
+
+.lastEvents .slider {
+    width: 80%;
+    position: relative;
+}
+
+.lastEvents .slider .previous {
+    position: absolute;
+    left: -35px;
+    top: 40%;
+}
+
+.lastEvents .slider .next {
+    position: absolute;
+    right: -35px;
+    top: 40%;
+}
+
+
+.lastEvents .slider .previous,
+.lastEvents .slider .next {
+    width: 50px;
+    height: 50px;
+    border: 1px blue solid;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lastEvents .slider .item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px blue solid;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.lastEvents .slider #second,
+.lastEvents .slider #third {
+    display: none;
+}
+
+.lastEvents .slider .item .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastEvents .slider .item .top .left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.lastEvents .slider .item .top .left img {
+    width: 100px;
+    height: 60px;
+    border: 1px black solid;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.lastEvents .slider .item .top .left .description .name {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lastEvents .slider .item .top .left .description .name img {
+    width: 30px;
+    height: 18px;
+    object-fit: cover;
+}
+
+.lastEvents .slider .item .top .left .description .name h4 {
+    font-size: 16px;
+}
+
+.lastEvents .slider .item .top .left .description .locationData {
+    display: flex;
+    gap: 7px;
+}
+
+.lastEvents .slider .item .top .left .description .name .locationData span:first-child {
+    position: relative;
+}
+
+.lastEvents .slider .item .top .left .description .locationData span:first-child::after {
+    content: '';
+    display: inline;
+    margin-left: 3px;
+    height: 18px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+}
+
+.lastEvents .slider .item .top .right {
+    display: flex;
+    gap: 20px;
+}
+
+.lastEvents .slider .item .top .right span {
+    color: blue;
+    font-weight: 600;
+    border: 2px blue solid;
+    height: max-content;
+    padding: 12px 26px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lastEvents .slider .item .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lastEvents .slider .item .bottom h4 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.lastEvents .slider .item .bottom .players {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lastEvents .slider .item .bottom .players .playerItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastEvents .slider .item .bottom .players .playerItem .left img:first-child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px blue solid;
+    object-fit: cover;
+}
+
+.lastEvents .slider .item .bottom .players .playerItem .left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.lastEvents .slider .item .bottom .players .playerItem .left .name {
+    display: flex;
+    gap: 5px;
+}
+
+.lastEvents .slider .item .bottom .players .playerItem .left .name img {
+    width: 30px;
+    height: 18px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+.lastEvents .slider .item .bottom .players .playerItem .right {
+    display: flex;
+    gap: 10px;
+}
+
+.lastEvents .slider .item .bottom .players .playerItem .right span {
+    font-weight: 700;
+}
+
+.lastEvents .slider .sliderBar {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.lastEvents .slider .sliderBar div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.lastEvents .slider .sliderBar div:first-child {
+    background-color: blue;
+}
+
+
+
+
+
+
+
+

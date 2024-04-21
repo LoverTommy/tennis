@@ -194,7 +194,7 @@
         display: none;
     }
 
-    header .burgerMenu {
+    header .burgerMenuOpen {
         display: flex;
     }
 }
@@ -228,5 +228,17 @@
 
     .news .posts .item {
         width: 100%;
+    }
+
+    .burgerMenu .top {
+        padding: 20px;
+    }
+
+    .burgerMenu {
+        height: 300px;
+    }
+
+    .burgerMenu .menu a {
+        font-size: 16px;
     }
 }
