@@ -59,10 +59,10 @@
     }
 
     .burgerMenu {
-        height: 300px;
+        height: 440px;
     }
 
     .burgerMenu .menu a {
-        font-size: 16px;
+        font-size: 24px;
     }
 }

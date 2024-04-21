@@ -4,8 +4,8 @@
     position: fixed;
     width: 100%;
     z-index: 200;
-    background-color: rgba(0, 0, 0, 0.61);
-    height: 400px;
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 600px;
     display: none;
 }
 
@@ -49,7 +49,7 @@
 .burgerMenu .menu {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     text-align: center;
     padding-top: 20px;
 }
@@ -58,7 +58,7 @@
     text-decoration: none;
     font-family: 'montserrat';
     color: white;
-    font-size: 20px;
+    font-size: 32px;
 }
 
 header {

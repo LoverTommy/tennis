@@ -183,18 +183,6 @@
     font-weight: 500;
 }
 
-.details .content .right .links .icons {
-    display: flex;
-    gap: 10px;
-}
-
-.details .content .right .links .icons img {
-    width: 20px;
-    height: 20px;
-    border: 1px black solid;
-    border-radius: 5px;
-}
-
 
 /* lastEvents */
 
