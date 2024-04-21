@@ -170,6 +170,7 @@
     border: 1px blue solid;
     border-radius: 10px;
     padding: 20px 50px;
+    justify-content: center;
 }
 
 .details .content > div > div {
