@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'montserrat';
+    padding-bottom: 100px;
+}
+
+.center {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Tournaments */
+
+.tournaments {
+    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tournaments .search {
+    position: relative;
+    width: max-content;
+}
+
+.tournaments .search input {
+    width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px rgba(0, 0, 0, 0.479) solid;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.tournaments .search img {
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.tournaments .list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tournaments .list .item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+    padding: 12px;
+    height: 10px;
+}
+
+.tournaments .list .item .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tournaments .list .item .title h4 {
+    font-weight: 600;
+}
+
+.tournaments .list .item .title h4 span {
+    color: rgba(0, 0, 0, 0.589);
+}
+
+.tournaments .list .item .title img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transform: scaleY(-1);
+}
+
+.tournaments .list .item .tournamentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    align-self: center;
+}
+
+.tournaments .list .item .tournamentsList .item {
+    border: 1px rgba(0, 0, 0, 0.267) solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 22px;
+    height: max-content;
+}
+
+.tournaments .list .item .tournamentsList .item .description {
+    display: flex;
+    gap: 25px;
+}
+
+.tournaments .list .item .tournamentsList .item .description img {
+    width: 120px;
+    height: 70px;
+    border: 1px black solid;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.tournaments .list .item .tournamentsList .item .description .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tournaments .list .item .tournamentsList .item .description .title .name {
+    display: flex;
+    gap: 10px;
+}
+
+.tournaments .list .item .tournamentsList .item .description .name img {
+    width: 30px;
+    height: 20px;
+}
+
+.tournaments .list .item .results {
+    color: blue;
+    font-weight: 700;
+    border: 2px blue solid;
+    padding: 16px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}

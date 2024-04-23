@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+    .tournaments .search input {
+        width: 100%;
+    }
+
+    .tournaments .search {
+        width: 94%;
+    }
+
+    .tournaments .search img {
+        right: -10px;
+    }
+
+    .tournaments .list .item .results {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .tournaments .list .item .tournamentsList .item .description img {
+        width: 80px;
+        height: 50px;
+    }
+
+    .tournaments .list .item .title h4 {
+        font-size: 12px;
+    }
+
+    .tournaments .list .item .tournamentsList .item .description .name img {
+        width: 20px;
+        height: 14px;
+    }
+
+    .tournaments .list .item .tournamentsList .item .description .title .name {
+        align-items: center;
+    }
+
+    .tournaments .list .item .tournamentsList .item .description .title .locationDate span {
+        font-size: 10px;
+    }
+
+    .tournaments .list .item .tournamentsList .item .description {
+        gap: 10px;
+    }
+
+    .tournaments .list .item .tournamentsList {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tournaments .list .item .tournamentsList .item {
+        padding: 10px;
+    }
+
+    .tournaments .list .item .results {
+        border: 1px blue solid;
+        font-size: 10px;
+    }
+
+    .tournaments .list .item .tournamentsList .item .description img {
+        width: 60px;
+        height: 34px;
+    }
+
+    .tournaments .list .item .tournamentsList .item .description .name img {
+        width: 16px;
+        height: 10px;
+        border-radius: 4px;
+    }
+
+    .tournaments .list {
+        gap: 20px;
+    }
+
+    .tournaments h1 {
+        align-self: center;
+    }
+}

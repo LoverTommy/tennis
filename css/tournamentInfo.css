@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'montserrat';
+    padding-bottom: 100px;
+}
+
+.center {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Title */
+
+.title {
+    padding-top: 100px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title .left h1 {
+    font-size: 36px;
+}
+
+.title .left p {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.title .image {
+    width: 500px;
+    height: 300px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+.title .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* details */
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.details h4 {
+    font-size: 28px;
+}
+
+.details .content {
+    display: flex;
+    flex-direction: column;
+    border: 1px rgba(0, 0, 0, 0.61) solid;
+    border-radius: 10px;
+    padding: 20px 50px 24px 50px;
+    width: 60%;
+    gap: 25px;
+}
+
+.details .content > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details .content > div h5 {
+    font-size: 14px;
+}
+
+.details .content > div p {
+    font-size: 14px;
+}
+
+.details .content .scores .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.details .content .scores .buttons span {
+    padding: 6px 10px;
+    font-size: 12px;
+    border: 2px blue solid;
+    color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.details .description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 67%;
+}
+
+
+/* players */
+
+.players  {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.players .playersList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.players .playersList h4 {
+    font-size: 28px;
+    align-self: center;
+}
+
+.players .playersList .slider .list {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.players .playersList .slider .list .playerItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 26px 40px 26px;
+    align-items: center;
+    border: 1px rgba(0, 0, 0, 0.253) solid;
+    border-radius: 10px;
+}
+
+.players .playersList .slider .list .playerItem img {
+    width: 120px;
+    height: 120px;
+    border: 1px blue solid;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.players .playersList .slider .list .playerItem h5 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.players .playersList .slider .list .playerItem img:last-child {
+    width: 16px;
+    height: 10px;
+    border-radius: 4px;
+}
+
+.players .playersList .prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px rgba(0, 0, 0, 0.253) solid;
+    object-fit: cover;
+    left: -20px;
+    top: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.players .playersList .next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px rgba(0, 0, 0, 0.253) solid;
+    object-fit: cover;
+    right: -20px;
+    top: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.players .playersList .slider {
+    width: max-content;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.players .playersList .slider .scrollBar {
+    display: flex;
+    gap: 10px;
+}
+
+.players .playersList .slider .scrollBar div {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.274);
+    border-radius: 50%;
+}
+
+.players .playersList .slider .scrollBar div:first-child {
+    background-color: blue;
+}
+
+.players .playersList .slider #list2 {
+    display: none;
+}
+
+
+
+.players .category {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 71%;
+}
+
+.players .category .filter {
+    display: flex;
+    gap: 20px;
+}
+
+.players .category .filter > div {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.players .category .filter > div h4 {
+    color: blue;
+    font-size: 18px;
+}
+
+.players .category .filter > div hr {
+    height: 2px;
+    background-color: blue;
+    border: none;
+}
+
+.players .category .filter > div:last-child hr {
+    display: none;
+}
+
+.players .category .filter > div:last-child h4 {
+    color: rgba(0, 0, 0, 0.432);
+}
+
+.players .category .singlesList {
+    display: flex;
+    gap: 20px;
+}
+
+.players .category .singlesList .playerItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 22px 10px 22px;
+    align-items: center;
+    border: 1px rgba(0, 0, 0, 0.253) solid;
+    border-radius: 10px;
+}
+
+.players .category .singlesList .playerItem img:first-child {
+    width: 120px;
+    height: 120px;
+    border: 1px blue solid;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+}
+
+.players .category .singlesList .playerItem {
+    position: relative;
+}
+
+.players .category .singlesList .playerItem .year {
+    position: absolute;
+    top: 120px;
+    border: 1px blue solid;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.players .category .singlesList .playerItem h5 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.players .category .singlesList .playerItem img:nth-child(4) {
+    width: 16px;
+    height: 10px;
+    border: 1px blue solid;
+    border-radius: 4px;
+}
+
+.players .category .singlesList .playerItem span:nth-child(5),
+.players .category .singlesList .playerItem span:nth-child(6) {
+    color: blue;
+    font-weight: 600;
+    border: 2px blue solid;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+.players .category .doublesList {
+    display: none;
+    gap: 20px;
+}
+
+.players .category .doublesList .playerItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 22px 10px 22px;
+    align-items: center;
+    border: 1px rgba(0, 0, 0, 0.253) solid;
+    border-radius: 10px;
+}
+
+.players .category .doublesList .playerItem .playersImage {
+    display: flex;
+    gap: 1px;
+    position: relative;
+}
+
+.players .category .doublesList .playerItem .playersImage img {
+    width: 55px;
+    height: 55px;
+    border: 1px blue solid;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.players .category .doublesList .playerItem .playersImage .year {
+    position: absolute;
+    top: 45px;
+    left: 22px;
+    border: 1px blue solid;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.players .category .doublesList .playerItem .playersName {
+    padding-top: 12px;
+}
+
+.players .category .doublesList .playerItem .playersName h5 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.players .category .doublesList .playerItem .playersCountry {
+    display: flex;
+    gap: 5px;
+    padding: 5px 0px;
+}
+
+.players .category .doublesList .playerItem .playersCountry img {
+    width: 16px;
+    height: 10px;
+    border: 1px blue solid;
+    border-radius: 4px;
+}
+
+.players .category .doublesList .playerItem span:nth-child(4),
+.players .category .doublesList .playerItem span:nth-child(5) {
+    color: blue;
+    font-weight: 600;
+    border: 2px blue solid;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.players .category .singlesMatches {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.players .category .singlesMatches .top {
+    display: flex;
+    gap: 50px;
+}
+
+.players .category .singlesMatches .top span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.players .category .singlesMatches .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.players .category .singlesMatches .item .left {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.players .category .singlesMatches .item .left .player {
+    display: flex;
+    align-items: center;
+    gap: 10px;    
+}
+
+.players .category .singlesMatches .item .left span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.players .category .singlesMatches .item .left .player img:first-child {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px blue solid;
+    border-radius: 50%;
+}
+
+.players .category .singlesMatches .item .left .player img:nth-child(2) {
+    width: 32px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px blue solid;
+    object-fit: cover;
+}
+
+.players .category .singlesMatches .item .buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.players .category .singlesMatches .item .buttons span {
+    color: blue;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px blue solid;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.players .category .doublesMatches {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.players .category .doublesMatches .top {
+    display: flex;
+    gap: 50px;
+}
+
+.players .category .doublesMatches .top span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.players .category .doublesMatches .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.players .category .doublesMatches .item .left {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.players .category .doublesMatches .item .left .players {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding-top: 0;
+}
+
+.players .category .doublesMatches .item .left .players .player {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.players .category .doublesMatches .item .left span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.players .category .doublesMatches .item .left .player img:first-child {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px blue solid;
+    border-radius: 50%;
+}
+
+.players .category .doublesMatches .item .left .player img:nth-child(2) {
+    width: 32px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px blue solid;
+    object-fit: cover;
+}
+
+.players .category .doublesMatches .item .buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.players .category .doublesMatches .item .buttons span {
+    color: blue;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px blue solid;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
