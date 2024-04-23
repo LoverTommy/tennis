@@ -1,49 +1,48 @@
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 
-const list1 = document.getElementById('list1');
-const list2 = document.getElementById('list2');
+const slider = document.getElementById('slider');
+const sliderItem = document.getElementById('playerItem');
 
 const scrollbar1 = document.getElementById('scrollBar1');
 const scrollbar2 = document.getElementById('scrollBar2');
 
-const itemsArr = [list1,list2];
-const itemsBarArr = [scrollbar1,scrollbar2];
+const sliderItems = slider.children;
 
-let previousItemNum = 0;
-let activeItemNum = 0;
+console.log(sliderItems.length)
+
+let sliderStep = 0;
 
 
 prev.addEventListener('click', ()=>{
-    if(activeItemNum === 0) {
-        activeItemNum = 1;
-        previousItemNum = 0;
-        slider();
-    }else {
-        activeItemNum = 0;
-        previousItemNum = 1;
-        slider();
-    }
+    sliderFunc('prev');
 })
 
 next.addEventListener('click', ()=>{
-    if(activeItemNum === 0) {
-        activeItemNum = 1;
-        previousItemNum = 0;
-        slider();
-    }else {
-        activeItemNum = 0;
-        previousItemNum = 1;
-        slider();
-    }
+    sliderFunc('next');
 })
 
+setTimeout(() => {
+    console.log((sliderItems.length-1)*sliderItem.offsetWidth)
+    
+}, 1000);
 
-function slider(button) {
-    itemsArr[activeItemNum].style.display = 'flex';
-    itemsArr[previousItemNum].style.display = 'none';
-    itemsBarArr[activeItemNum].style.cssText = 'background-color: blue';
-    itemsBarArr[previousItemNum].style.cssText = 'background-color: rgba(0, 0, 0, 0.274)';
+function sliderFunc(button) {
+
+    if(button === 'prev') {
+        if(sliderStep <= 0) {
+            slider.style.left = `${sliderStep + sliderItem.offsetWidth}` + 'px';
+            sliderStep += sliderItem.offsetWidth;
+        }
+    }
+
+    if(button === 'next') {
+        if(sliderStep > -(sliderItems.length-3)*sliderItem.offsetWidth) {
+            slider.style.left = `${sliderStep - sliderItem.offsetWidth}` + 'px';
+            sliderStep -= sliderItem.offsetWidth;
+            console.log(sliderStep)
+        }
+    }
 }
 
 

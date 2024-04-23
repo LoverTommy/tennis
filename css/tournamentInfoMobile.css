@@ -1,0 +1,65 @@
+@media screen and (max-width: 1450px) {
+    .players .category {
+        width: 100%;
+        align-items: center;
+    }
+
+    .players .category .singlesMatches,
+    .players .category .doublesMatches {
+        width: 84%;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+    .title {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .title .image {
+        width: 75%;
+    }
+
+    .details .content {
+        width: 78%;
+    }
+
+    .details .description {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title .image {
+        width: 90%;
+        height: 200px;
+    }
+
+    .title .left h1 {
+        font-size: 22px;
+    }
+
+    .title .left p {
+        font-size: 16px;
+    }
+
+    .details .content {
+        padding: 20px;
+    }
+
+    .details .content .scores .buttons span {
+        border: 1px blue solid;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .details .content > div h5 {
+        font-size: 12px;
+    }
+
+    .details .content > div p {
+        font-size: 12px;
+    }
+}
