@@ -37,7 +37,7 @@ function sliderFunc(button) {
     }
 
     if(button === 'next') {
-        if(sliderStep > -(sliderItems.length-3)*sliderItem.offsetWidth) {
+        if(sliderStep > -(sliderItems.length-4)*sliderItem.offsetWidth) {
             slider.style.left = `${sliderStep - sliderItem.offsetWidth}` + 'px';
             sliderStep -= sliderItem.offsetWidth;
             console.log(sliderStep)
