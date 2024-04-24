@@ -80,7 +80,7 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-    transform: scaleY(-1);
+    transform: scaleY(1);
 }
 
 .tournaments .list .item .tournamentsList {
