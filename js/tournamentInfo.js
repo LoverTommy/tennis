@@ -9,9 +9,11 @@ const scrollbar2 = document.getElementById('scrollBar2');
 
 const sliderItems = slider.children;
 
-console.log(sliderItems.length)
-
 let sliderStep = 0;
+
+const media1 = window.matchMedia('(max-width: 900px)')
+const media2 = window.matchMedia('(max-width: 700px)')
+const media3 = window.matchMedia('(max-width: 500px)');
 
 
 prev.addEventListener('click', ()=>{
@@ -22,25 +24,35 @@ next.addEventListener('click', ()=>{
     sliderFunc('next');
 })
 
-setTimeout(() => {
-    console.log((sliderItems.length-1)*sliderItem.offsetWidth)
-    
-}, 1000);
-
 function sliderFunc(button) {
-
     if(button === 'prev') {
-        if(sliderStep <= 0) {
+        if(sliderStep <= -sliderItem.offsetWidth) {
             slider.style.left = `${sliderStep + sliderItem.offsetWidth}` + 'px';
             sliderStep += sliderItem.offsetWidth;
         }
     }
 
     if(button === 'next') {
-        if(sliderStep > -(sliderItems.length-4)*sliderItem.offsetWidth) {
-            slider.style.left = `${sliderStep - sliderItem.offsetWidth}` + 'px';
-            sliderStep -= sliderItem.offsetWidth;
-            console.log(sliderStep)
+        if(media3.matches) {
+            if(sliderStep > -(sliderItems.length-1)*sliderItem.offsetWidth) {
+                slider.style.left = `${sliderStep - sliderItem.offsetWidth}` + 'px';
+                sliderStep -= sliderItem.offsetWidth;
+            }
+        }else if(media2.matches){
+            if(sliderStep > -(sliderItems.length-2)*sliderItem.offsetWidth) {
+                slider.style.left = `${sliderStep - sliderItem.offsetWidth}` + 'px';
+                sliderStep -= sliderItem.offsetWidth;
+            }
+        }else if(media1.matches){
+            if(sliderStep > -(sliderItems.length-3)*sliderItem.offsetWidth) {
+                slider.style.left = `${sliderStep - sliderItem.offsetWidth}` + 'px';
+                sliderStep -= sliderItem.offsetWidth;
+            }
+        }else {
+            if(sliderStep > -(sliderItems.length-4)*sliderItem.offsetWidth) {
+                slider.style.left = `${sliderStep - sliderItem.offsetWidth}` + 'px';
+                sliderStep -= sliderItem.offsetWidth;
+            }
         }
     }
 }

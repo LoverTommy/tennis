@@ -138,6 +138,7 @@
 .players .playersList .sliderWrapper {
     overflow-x: hidden;
     max-width: 920px;
+    align-self: center;
 }
 
 .players .playersList .sliderPlayers {

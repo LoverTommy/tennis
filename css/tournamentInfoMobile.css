@@ -8,7 +8,24 @@
     .players .category .doublesMatches {
         width: 84%;
     }
+
+    .center {
+        max-width: 98%;
+    }
     
+    .players .category .singlesList,
+    .players .category .doublesList {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .players .category .singlesList .playerItem,
+    .players .category .doublesList .playerItem {
+        width: 20%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -28,6 +45,47 @@
 
     .details .description {
         width: 88%;
+    }
+
+    .players .playersList .sliderWrapper {
+        width: 100%;
+    }
+
+    .players .playersList {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .players .category .singlesList .playerItem {
+        width: 30%;
+    }
+
+    .players .category .doublesList .playerItem .playersName h5 {
+        font-size: 12px;
+    }
+
+    .players .category .doublesMatches .item,
+    .players .category .singlesMatches .item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .players .category .doublesMatches .item .left,
+    .players .category .singlesMatches .item .left {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .players .category .singlesMatches, 
+    .players .category .doublesMatches {
+        gap: 50px;
+        padding-top: 20px;
+    }
+
+    .players .category .doublesMatches .top,
+    .players .category .singlesMatches .top {
+        display: none;
     }
 }
 
@@ -61,5 +119,32 @@
 
     .details .content > div p {
         font-size: 12px;
+    }
+
+    .details .description {
+        text-align: center;
+    }
+
+    .details h4 {
+        font-size: 22px;
+    }
+
+    .players {
+        padding-top: 50px;
+    }
+
+    .players .category .singlesList .playerItem,
+    .players .category .doublesList .playerItem {
+        width: 34%;
+        padding: 14px 16px 10px 16px;
+    }
+
+    .players .category .singlesList .playerItem img:first-child {
+        width: 90px;
+        height: 90px;
+    }
+
+    .players .category .singlesList .playerItem .year {
+        top: 85px;
     }
 }
