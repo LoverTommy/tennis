@@ -1,0 +1,52 @@
+@media screen and (max-width: 1450px) {
+    .matchesSlider .sliderWrapper {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .matchesSlider .next {
+        right: 0;
+    }
+
+    .matchesSlider .prev {
+        left: 0;
+    }
+
+    .center {
+        max-width: 98%;
+    }
+    
+    .latestMatches .matchesList {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .matchesSlider .sliderWrapper .sliderItems li .players .player {
+        width: 290px;
+    }
+
+    .matchesSlider .next {
+        top: 102%;
+    }
+
+    .matchesSlider .prev {
+        top: 102%;
+    }
+
+    .latestMatches {
+        padding-top: 100px;
+    }
+
+    .latestMatches .matchesList .matchItem .players {
+        width: 100%;
+    }
+
+    .latestMatches .matchesList .matchItem {
+        width: 98%;
+    }
+
+    .latestMatches .title h2 {
+        align-self: center;
+    }
+}
