@@ -373,9 +373,17 @@
 
 .matchStats .double .stats .playerProfile .items .player {
     display: flex;
-    gap: 5px;
     align-items: center;
     flex-direction: column;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.matchStats .double .stats .playerProfile .items .player:nth-child(odd) {
+    border: 1px #7814ff solid;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .matchStats .double .stats .playerProfile .items .player .top {
@@ -410,8 +418,8 @@
     color: black;
 }
 
-.matchStats .double .stats .playerProfile .items .player .top .country {
-
+.matchStats .double .stats .playerProfile .items .player:nth-child(odd) .top .left .name span {
+    color: #7814ff;
 }
 
 .matchStats .double .stats .playerProfile .items .player .top .country span {
@@ -420,21 +428,33 @@
     color: rgba(0, 0, 0, 0.582);
 }
 
+.matchStats .double .stats .playerProfile .items .player:nth-child(odd) .top .country span {
+    color: #7814ff;
+}
+
 .matchStats .double .stats .playerProfile .items .player .rank {
     display: flex;
     align-items: center;
     gap: 5px;
-    align-self: start;
+    align-self: end;
 }
 
 .matchStats .double .stats .playerProfile .items .player .rank h4 {
     font-size: 20px;
 }
 
+.matchStats .double .stats .playerProfile .items .player:nth-child(odd) .rank h4 {
+    color: #7814ff;
+}
+
 .matchStats .double .stats .playerProfile .items .player .rank span {
     font-size: 20px;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.582);
+}
+
+.matchStats .double .stats .playerProfile .items .player:nth-child(odd) .rank span {
+    color: #7814ff;
 }
 
 
