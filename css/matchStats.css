@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'montserrat';
+    padding-bottom: 100px;
+}
+
+.center {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* matchStats */
+
+.matchStats {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.matchStats .title {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background: #7814ff;
+}
+
+.matchStats .title p {
+    font-weight: 700;
+    color: white;
+}
+
+.matchStats .title .date {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.matchStats .title .date span {
+    font-weight: 700;
+    color: white;
+    font-size: 12px;
+}
+
+.matchStats .title .date img {
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+    border: 1px black solid;
+}
+
+.matchStats .players {
+    display: flex;
+    gap: 5px;
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.matchStats .players .leftPlayer {
+    width: 50%;
+    height: 220px;
+    background: #7814ff;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.matchStats .players .leftPlayer img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 5px white solid;
+    position: absolute;
+    left: 100px;
+}
+
+.matchStats .players .rightPlayer {
+    width: 50%;
+    height: 220px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.matchStats .players .rightPlayer img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 5px white solid;
+    position: absolute;
+    right: 100px;
+}
+
+.matchStats .players .centerBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 14px 14px 14px 18px;
+    position: absolute;
+    width: 32%;
+    left: 32%;
+    top: 38%;
+}
+
+.matchStats .players .centerBlock::after {
+    content: '';
+    width: 3px;
+    height: 90%;
+    background: linear-gradient(to bottom, rgb(126, 24, 221) 50%, black 50%);;
+    position: absolute;
+    left: 4px;
+    top: 5px;
+}
+
+.matchStats .players .centerBlock .playerItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.matchStats .players .centerBlock .playerItem .left {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.matchStats .players .centerBlock .playerItem .left img {
+    width: 28px;
+    height: 18px;
+    object-fit: cover;
+    border: 1px black solid;
+}
+
+.matchStats .players .centerBlock .playerItem .left h4 {
+    font-size: 14px;
+}
+
+.matchStats .players .centerBlock .playerItem .right {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.matchStats .players .centerBlock .playerItem .right img {
+    width: 14px;
+    height: 14px;
+}
+
+.matchStats .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.matchStats .stats .statsBar {
+    display: flex;
+    gap: 50px;
+    align-items: end;
+}
+
+.matchStats .stats .statsBar .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.matchStats .stats .statsBar .left h2 {
+    padding: 0px 24px;
+    color: white;
+    font-size: 80px;
+    background-color: #7814ff;
+}
+
+.matchStats .stats .statsBar .left p {
+    font-size: 26px;
+    font-weight: 700;
+    align-self: end;
+}
+
+.matchStats .stats .statsBar .left span {
+    align-self: end;
+    font-weight: 500;
+}
+
+.matchStats .stats .statsBar .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.matchStats .stats .statsBar .right h2 {
+    padding: 0px 24px;
+    color: black;
+    font-size: 80px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+.matchStats .stats .statsBar .right p {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.matchStats .stats .statsBar .right span {
+    font-weight: 500;
+}
+
+.matchStats .stats .statsBar .centerItem {
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    border: 28px #7814ff solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matchStats .stats .statsBar .centerItem .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.matchStats .stats .statsBar .centerItem .content h2 {
+    font-size: 80px;
+    line-height: 84%;
+}
+
+.matchStats .stats .statsBar .centerItem .content p {
+    font-weight: 800;
+    text-align: center;
+}
+
+.matchStats .stats .careerStats {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.matchStats .stats .careerStats h4 {
+    font-size: 40px;
+}
+
+.matchStats .stats .careerStats .items {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.matchStats .stats .careerStats .items > div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.matchStats .stats .careerStats .items .left span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #7814ff;
+}
+
+.matchStats .stats .careerStats .items .centerItem {
+    align-items: center;
+}
+
+.matchStats .stats .careerStats .items .centerItem span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+.matchStats .stats .careerStats .items .right {
+    align-items: end;
+}
+
+.matchStats .stats .careerStats .items .right span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.matchStats .stats .playerProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    align-items: center;
+}
+
+.matchStats .stats .playerProfile h4 {
+    font-size: 40px;
+}
+
+.matchStats .stats .playerProfile .items {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.matchStats .stats .playerProfile .items .left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-self: flex-start;
+}
+
+.matchStats .stats .playerProfile .items .left span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.matchStats .stats .playerProfile .items .left .flex p {
+    font-size: 16px;
+}
+
+.matchStats .stats .playerProfile .items .centerItem {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+    align-items: center;
+}
+
+.matchStats .stats .playerProfile .items .centerItem  span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.575);
+}
+
+.matchStats .stats .playerProfile .items .right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: end;
+}
+
+.matchStats .stats .playerProfile .items .right span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.matchStats .stats .playerProfile .items .right .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.matchStats .stats .playerProfile .items .right .flex p {
+    font-size: 16px;
+}
+
+
+.matchStats .stats .prevMatches {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.matchStats .stats .prevMatches h4 {
+    font-size: 40px;
+}
+
+.matchStats .stats .prevMatches .matches {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem {
+    display: flex;
+    gap: 160px;
+    align-items: center;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .left {
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .left h5 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #7814ff;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .left h6 {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .left span {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(126, 24, 221) 50%, black 50%);;
+    position: absolute;
+    left: -10px;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .left {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .left img {
+    width: 32px;
+    height: 18px;
+    object-fit: cover;
+    border: 1px black solid;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .left h5 {
+    font-size: 16px;
+    color: black;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right img {
+    width: 16px;
+    height: 16px;
+}
+
+.matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right span {
+    font-weight: 800;
+}
+
+
+
+
+

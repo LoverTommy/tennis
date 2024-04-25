@@ -1,0 +1,179 @@
+
+@media screen and (max-width: 1450px) {
+    .matchStats .players {
+        width: 98%;
+    }
+    
+    .matchStats .title {
+        width: 98%;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+    .matchStats .players .leftPlayer img {
+        left: 50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .matchStats .players .rightPlayer img {
+        right: 50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .matchStats .players .centerBlock {
+        gap: 5px;
+        top: 40%;
+        width: 38%;
+        left: 29%;
+    }
+
+    .matchStats .stats .careerStats .items {
+        width: 94%;
+    }
+
+    .matchStats .stats .playerProfile .items {
+        width: 94%;
+    }
+
+    .matchStats .stats .prevMatches .matches {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .matchStats .players .centerBlock {
+        top: 90%;
+        width: 70%;
+        left: 12%;
+        box-shadow: 0px 1px 5px 0px black;
+    }
+
+    .matchStats .stats {
+        gap: 80px;
+    }
+
+    .matchStats .stats .statsBar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content max-content;
+        align-items: center;
+        gap: 0;
+        column-gap: 10px;
+        row-gap: 15px;
+        padding-top: 100px;
+    }
+
+    .matchStats .stats .statsBar .left {
+        grid-column: 1;
+        grid-row: 2;
+        width: max-content;
+        justify-self: end;
+        align-self: start;
+    }
+
+    .matchStats .stats .statsBar .right {
+        grid-column: 2;
+        grid-row: 2;
+        width: max-content;
+        align-self: start;
+    }
+
+    .matchStats .stats .statsBar .centerItem {
+        grid-column: 1/span 2;
+        grid-row: 1;
+        align-self: center;
+    }
+
+
+    .matchStats .stats .statsBar .right h2 {
+        width: max-content;
+    }
+
+    .matchStats .stats .statsBar .left h2 {
+        width: max-content;
+    }
+
+    .matchStats .stats {
+        padding-top: 0;
+    }
+
+    .matchStats .stats .playerProfile .items .right span,
+    .matchStats .stats .playerProfile .items .left span,
+    .matchStats .stats .playerProfile .items .centerItem span {
+        font-size: 14px;
+    }
+
+    .matchStats .stats .playerProfile h4 {
+        font-size: 32px;
+    }
+
+    .matchStats .stats .careerStats .items > div {
+        gap: 30px;
+    }
+
+    .matchStats .stats .prevMatches .matches .matchItem {
+        gap: 32px;
+    }
+
+    .matchStats .stats .prevMatches h4 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .matchStats .players .leftPlayer,
+    .matchStats .players .rightPlayer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .matchStats .players .leftPlayer img {
+        left: 0;
+        width: 80px;
+        height: 80px;
+        position: static;
+    }
+
+    .matchStats .players .rightPlayer img {
+        width: 80px;
+        height: 80px;
+        right: 0;
+        position: static;
+    }
+
+    .matchStats .players .centerBlock {
+        width: 90%;
+        left: 1px;
+    }
+
+    .matchStats .stats .careerStats .items .centerItem span,
+    .matchStats .stats .careerStats .items .right span,
+    .matchStats .stats .careerStats .items .left span {
+        font-size: 14px;
+    }
+
+    .matchStats .stats .careerStats h4 {
+        font-size: 32px;
+    }
+
+    .matchStats .stats .playerProfile .items .left,
+    .matchStats .stats .playerProfile .items .right {
+        gap: 30px;
+    }
+
+    .matchStats .stats .playerProfile .items .centerItem {
+        gap: 50px;
+    }
+
+    .matchStats .stats .prevMatches .matches .matchItem {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .matchStats .stats .prevMatches .matches .matchItem .left {
+        align-self: start;
+    }
+}
