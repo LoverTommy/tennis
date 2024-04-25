@@ -41,6 +41,21 @@
     .matchStats .stats .prevMatches .matches {
         width: 94%;
     }
+
+    .matchStats .double .players .centerBlock {
+        top: 98%;
+        width: 60%;
+        left: 18%;
+        box-shadow: 0px 1px 5px 0px black;
+    }
+
+    .matchStats .double .stats {
+        padding-top: 150px;
+    }
+
+    .matchStats .double .players .centerBlock {
+        gap: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -121,6 +136,34 @@
     .matchStats .stats .prevMatches h4 {
         font-size: 28px;
     }
+
+    .matchStats .double .stats {
+        padding-top: 50px;
+    } 
+
+    .matchStats .double .players .rightPlayer img {
+        position: static;
+        width: 80px;
+        height: 80px;
+    }
+
+    .matchStats .double .players .rightPlayer {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .matchStats .double .players .leftPlayer img {
+        position: static;
+        width: 80px;
+        height: 80px;
+    }
+
+    .matchStats .double .players .leftPlayer {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -132,14 +175,14 @@
 
     .matchStats .players .leftPlayer img {
         left: 0;
-        width: 80px;
-        height: 80px;
+        width: 110px;
+        height: 110px;
         position: static;
     }
 
     .matchStats .players .rightPlayer img {
-        width: 80px;
-        height: 80px;
+        width: 110px;
+        height: 110px;
         right: 0;
         position: static;
     }
@@ -175,5 +218,52 @@
 
     .matchStats .stats .prevMatches .matches .matchItem .left {
         align-self: start;
+    }
+
+
+    .matchStats .double .players .rightPlayer {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .matchStats .double .players .leftPlayer {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .matchStats .double .players .centerBlock {
+        width: 90%;
+        left: 0;
+        align-self: center;
+    }
+
+    .matchStats .double .stats .playerProfile h4 {
+        font-size: 30px;
+    }
+
+    .matchStats .double .stats .playerProfile .items .player .top .left img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .matchStats .double .stats .playerProfile .items .player .top .left .name span {
+        font-size: 16px;
+    }
+
+    .matchStats .double .stats .playerProfile .items .player .top .country span {
+        font-size: 16px;
+    }
+
+    .matchStats .double .stats .playerProfile .items .player .rank h4 {
+        font-size: 14px;
+    }
+
+    .matchStats .double .stats .playerProfile .items .player .rank span {
+        font-size: 14px;
     }
 }

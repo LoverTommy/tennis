@@ -26,6 +26,14 @@
     align-items: center;
 }
 
+.matchStats .single,
+.matchStats .double {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .matchStats .title {
     width: 100%;
     padding: 10px;
@@ -62,7 +70,6 @@
 
 .matchStats .players {
     display: flex;
-    gap: 5px;
     padding-top: 50px;
     position: relative;
     width: 100%;
@@ -84,6 +91,36 @@
     border: 5px white solid;
     position: absolute;
     left: 100px;
+}
+
+.matchStats .double .players .leftPlayer img {
+    width: 100px;
+    height: 100px;
+}
+
+.matchStats .double .players .leftPlayer img:first-child {
+    top: 20px;
+    left: 50px;
+}
+
+.matchStats .double .players .leftPlayer img:last-child {
+    top: 90px;
+    left: 140px;
+}
+
+.matchStats .double .players .rightPlayer img {
+    width: 100px;
+    height: 100px;
+}
+
+.matchStats .double .players .rightPlayer img:first-child {
+    top: 20px;
+    right: 50px;
+}
+
+.matchStats .double .players .rightPlayer img:last-child {
+    top: 90px;
+    right: 140px;
 }
 
 .matchStats .players .rightPlayer {
@@ -137,6 +174,23 @@
     display: flex;
     gap: 5px;
     align-items: center;
+}
+
+.matchStats .double .players .centerBlock {
+    top: 34%;
+}
+
+.matchStats .double .players .centerBlock .playerItem .left {
+    flex-direction: column;
+}
+
+.matchStats .double .players .centerBlock .playerItem {
+    padding: 0;
+}
+
+.matchStats .double .players .centerBlock .playerItem .left .item {
+    display: flex;
+    gap: 5px;
 }
 
 .matchStats .players .centerBlock .playerItem .left img {
@@ -303,6 +357,88 @@
     align-items: center;
 }
 
+.matchStats .double .stats .playerProfile {
+    width: 100%;
+}
+
+.matchStats .double .stats .playerProfile h4 {
+    font-size: 40px;
+}
+
+.matchStats .double .stats .playerProfile .items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.matchStats .double .stats .playerProfile .items .player {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.matchStats .double .stats .playerProfile .items .player .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.matchStats .double .stats .playerProfile .items .player .top .left {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.matchStats .double .stats .playerProfile .items .player .top .left img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px black solid;
+}
+
+.matchStats .double .stats .playerProfile .items .player .top .left .name {
+    display: flex;
+    flex-direction: column;
+}
+
+.matchStats .double .stats .playerProfile .items .player .top .left .name span {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.matchStats .double .stats .playerProfile .items .player .top .country {
+
+}
+
+.matchStats .double .stats .playerProfile .items .player .top .country span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+.matchStats .double .stats .playerProfile .items .player .rank {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    align-self: start;
+}
+
+.matchStats .double .stats .playerProfile .items .player .rank h4 {
+    font-size: 20px;
+}
+
+.matchStats .double .stats .playerProfile .items .player .rank span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+
+
 .matchStats .stats .playerProfile h4 {
     font-size: 40px;
 }
@@ -398,6 +534,20 @@
     align-items: start;
 }
 
+.matchStats .double .stats .prevMatches .matches .matchItem .matchInfo {
+    gap: 0;
+}
+
+.matchStats .double .stats .prevMatches .matches .matchItem .matchInfo .player .left {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.matchStats .double .stats .prevMatches .matches .matchItem .left .item {
+    display: flex;
+    gap: 5px;
+}
+
 .matchStats .stats .prevMatches .matches .matchItem .left h5 {
     font-size: 36px;
     font-weight: 800;
@@ -471,6 +621,9 @@
 .matchStats .stats .prevMatches .matches .matchItem .matchInfo .player .right span {
     font-weight: 800;
 }
+
+
+
 
 
 
