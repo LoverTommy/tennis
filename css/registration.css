@@ -85,9 +85,10 @@
     outline: none;
     border: 1px black solid;
     border-radius: 4px;
-    padding: 8px 65px;
+    padding: 8px 0px 8px 65px;
     font-size: 15px;
     font-family: 'montserrat';
+    width: 78%;
 }
 
 .logIn form  .password input {
@@ -117,4 +118,34 @@
     border-radius: 4px;
     font-size: 15px;
     font-family: 'montserrat';
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .logIn {
+        width: 100%;
+    }
+
+    .logIn form .password input {
+        padding: 8px 0px 8px 65px;
+        width: 80%;
+    }
+
+    .logIn form .confirm input {
+        padding: 8px 0px 8px 65px;
+        width: 80%;
+    }
+
+    .logIn form .number {
+        width: 100%;
+    }
+
+    .logIn form .number input {
+        padding: 8px 5px 8px 65px;
+    }
+
+    .logIn {
+        padding: 30px 36px 30px 28px;
+    }
 }
