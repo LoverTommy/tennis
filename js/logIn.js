@@ -6,7 +6,7 @@ const numberError = document.getElementById('error');
 
 logInForm.addEventListener('submit', (eo)=>{
 
-    if(numberError.style.display === 'inline') {
+    if(numberError.style.display === 'inline' || numberInput.value.length === 0) {
         eo.preventDefault();
     }
 })
