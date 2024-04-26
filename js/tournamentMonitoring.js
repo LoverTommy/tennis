@@ -30,8 +30,8 @@ function sliderFunc(button) {
             }
         }else {
             if(sliderStep <= -sliderItem.offsetWidth) {
-                slider.style.left = `${sliderStep + sliderItem.offsetWidth}` + 'px';
-                sliderStep += sliderItem.offsetWidth;
+                slider.style.left = `${sliderStep + sliderItem.offsetWidth + 20}` + 'px';
+                sliderStep += sliderItem.offsetWidth + 20;
             }
         }
     }
@@ -54,8 +54,8 @@ function sliderFunc(button) {
             }
         }else {
             if(sliderStep > -(sliderItems.length-3)*sliderItem.offsetWidth) {
-                slider.style.left = `${sliderStep - sliderItem.offsetWidth}` + 'px';
-                sliderStep -= sliderItem.offsetWidth;
+                slider.style.left = `${sliderStep - sliderItem.offsetWidth - 20}` + 'px';
+                sliderStep -= sliderItem.offsetWidth + 20;
             }
         }
     }

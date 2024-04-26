@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'montserrat';
+    padding-bottom: 100px;
+}
+
+.center {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Table */
+
+.table {
+    padding-top: 100px;
+    width: 99.5%;
+}
+
+.table .leaders {
+    display: flex;
+    flex-direction: column;
+}
+
+.table .leaders .top {
+    display: flex;
+    gap: 1px;
+    font-size: 12px;
+}
+
+.table .leaders .top .pos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    row-gap: 1px;
+    column-gap: 1px;
+    text-align: center;
+}
+
+.table .leaders .top .pos span:first-child {
+    padding: 24px 66px;
+    align-self: center;
+    justify-self: center;
+    border: 1px black solid;
+    grid-column: 1/span 2;
+}
+
+.table .leaders .top .pos span:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.table .leaders .top .pos span:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.table .leaders .top .pos span {
+    padding: 5px;
+    border: 1px black solid;
+}
+
+.table .leaders .name {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 3px;
+    border: 1px black solid;
+}
+
+.table .leaders .country {
+    display: flex;
+    align-items: center;
+    padding: 0px 34px;
+    border: 1px black solid;
+}
+
+.table .leaders .doublePoint {
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+}
+
+.table .leaders .doublePoint span {
+    text-align: center;
+    width: max-content;
+    padding: 2px;
+}
+
+.table .leaders .titlesTournaments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    row-gap: 1px;
+    column-gap: 1px;
+}
+
+.table .leaders .titlesTournaments span:nth-child(1),
+.table .leaders .titlesTournaments span:nth-child(2) {
+    width: 60px;
+    border: 1px black solid;
+    text-align: center;
+    align-self: center;
+    padding: 25px 0px;
+}
+
+.table .leaders .titlesTournaments span:last-child {
+    grid-column: 1/span 2;
+    grid-row: 2;
+    border: 1px black solid;
+    text-align: center;
+    align-self: center;
+    padding: 4px 0px;
+}
+
+.table .leaders .singleMatches {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-template-rows: 67px 25px;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.table .leaders .singleMatches span:first-child {
+    grid-column: 1/span 4;
+    grid-row: 1;
+    padding: 25px 22px;
+    align-self: center;
+    border: 1px black solid;
+    text-align: center;
+    width: max-content;
+}
+
+.table .leaders .singleMatches span:nth-child(2),
+.table .leaders .singleMatches span:nth-child(3),
+.table .leaders .singleMatches span:nth-child(4),
+.table .leaders .singleMatches span:nth-child(5) {
+    border: 1px black solid;
+    padding: 5px;
+}
+
+.table .leaders .doubleMatches {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-template-rows: 67px 25px;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.table .leaders .doubleMatches span:first-child {
+    grid-column: 1/span 4;
+    grid-row: 1;
+    padding: 25px 22px;
+    align-self: center;
+    border: 1px black solid;
+    text-align: center;
+    width: max-content;
+}
+
+.table .leaders .doubleMatches span:nth-child(2),
+.table .leaders .doubleMatches span:nth-child(3),
+.table .leaders .doubleMatches span:nth-child(4),
+.table .leaders .doubleMatches span:nth-child(5) {
+    border: 1px black solid;
+    padding: 5px;
+}
+
+.table .leaders .percentWins {
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+}
+
+.table .leaders .percentWins span {
+    text-align: center;
+    width: max-content;
+    padding: 2px;
+}
+
+.table .leaders .points {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-template-rows: 46px 20px 25px;
+    column-gap: 1px;
+    row-gap: 1px;
+    text-align: center;
+}
+
+.table .leaders .points span {
+    border: 1px black solid;
+}
+
+.table .leaders .points span:nth-child(1) {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    padding: 6px;
+}
+
+.table .leaders .points span:nth-child(2) {
+    grid-column: 3/span 4;
+    grid-row: 1;
+    padding: 6px;
+}
+
+.table .leaders .points span:nth-child(3) {
+    grid-column: 1/span 4;
+    grid-row: 2;
+    align-self: center;
+    padding: 1px 0px;
+    width: 100%;
+}
+
+.table .leaders .points span:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+    padding: 4px 0px;
+}
+
+.table .leaders .points span:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    padding: 4px 0px;
+}
+
+.table .leaders .points span:nth-child(6) {
+    grid-column: 3;
+    grid-row: 3;
+    align-self: center;
+    padding: 4px 0px;
+}
+
+.table .leaders .points span:nth-child(7) {
+    grid-column: 4;
+    grid-row: 3;
+    align-self: center;
+    padding: 4px 0px;
+    width: 100%;
+}
+
+.table .leaders .championPoints {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: 67px 25px;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.table .leaders .championPoints span {
+    border: 1px black solid;
+    text-align: center;
+}
+
+.table .leaders .championPoints span:nth-child(1) {
+    grid-column: 1/span 3;
+    grid-row: 1;
+    align-self: center;
+    padding: 18px 0px 17px 0px;
+}
+
+.table .leaders .championPoints span:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    padding: 4px;
+}
+
+.table .leaders .championPoints span:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    padding: 4px;
+}
+
+.table .leaders .championPoints span:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    padding: 4px;
+}
+
+.table .leaders .weeksPoints {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: 67px 25px;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.table .leaders .weeksPoints span {
+    border: 1px black solid;
+    text-align: center;
+}
+
+.table .leaders .weeksPoints span:nth-child(1) {
+    grid-column: 1/span 3;
+    grid-row: 1;
+    align-self: center;
+    padding: 25px 0px 25px 0px;
+}
+
+.table .leaders .weeksPoints span:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    padding: 4px;
+}
+
+.table .leaders .weeksPoints span:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    padding: 4px;
+}
+
+.table .leaders .weeksPoints span:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    padding: 4px;
+}
+
+
+.table .leaders .bottomTable {
+    display: flex;
+    gap: 1px;
+    padding-top: 4px;
+}
+
+.table .leaders .bottomTable .posTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .posTable span {
+    border: 1px black solid;
+    text-align: center;
+}
+
+.table .leaders .bottomTable .posTable span:first-child {
+    width: 92.56px;
+}
+
+.table .leaders .bottomTable .posTable span:last-child {
+    width: 92.56px;
+}
+
+.table .leaders .bottomTable .nameTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .nameTable span {
+    border: 1px black solid;
+    width: 129px;
+    text-align: center;
+}
+
+.table .leaders .bottomTable .countryTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .countryTable span {
+    width: 105px;
+    border: 1px black solid;
+    text-align: center;
+}
+
+.table .leaders .bottomTable .doublePointTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .doublePointTable span {
+    width: 55px;
+    border: 1px black solid;
+    text-align: center;
+}
+
+.table .leaders .bottomTable .titlesTournamentsTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .titlesTournamentsTable span {
+    width: 60px;
+    text-align: center;
+    border: 1px black solid;
+}
+
+.table .leaders .bottomTable .singleMatchesTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .singleMatchesTable span {
+    text-align: center;
+    border: 1px black solid;
+}
+
+.table .leaders .bottomTable .singleMatchesTable span:nth-child(1) {
+    width: 44px;
+}
+
+.table .leaders .bottomTable .singleMatchesTable span:nth-child(2) {
+    width: 49px;
+}
+
+.table .leaders .bottomTable .singleMatchesTable span:nth-child(3) {
+    width: 83px;
+}
+
+.table .leaders .bottomTable .singleMatchesTable span:nth-child(4) {
+    width: 63px;
+}
+
+
+.table .leaders .bottomTable .doubleMatchesTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .doubleMatchesTable span {
+    text-align: center;
+    border: 1px black solid;
+}
+
+.table .leaders .bottomTable .doubleMatchesTable span:nth-child(1) {
+    width: 44px;
+}
+
+.table .leaders .bottomTable .doubleMatchesTable span:nth-child(2) {
+    width: 50px;
+}
+
+.table .leaders .bottomTable .doubleMatchesTable span:nth-child(3) {
+    width: 83px;
+}
+
+.table .leaders .bottomTable .doubleMatchesTable span:nth-child(4) {
+    width: 62px;
+}
+
+.table .leaders .bottomTable .percentWinsTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .percentWinsTable span {
+    text-align: center;
+    border: 1px black solid;
+    width: 60px;
+}
+
+.table .leaders .bottomTable .pointsTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .pointsTable span {
+    border: 1px black solid;
+    text-align: center;
+}
+
+.table .leaders .bottomTable .pointsTable span:nth-child(1) {
+    width: 87px;
+}
+
+.table .leaders .bottomTable .pointsTable span:nth-child(2) {
+    width: 65px;
+}
+
+.table .leaders .bottomTable .pointsTable span:nth-child(3) {
+    width: 95px;
+}
+
+.table .leaders .bottomTable .pointsTable span:nth-child(4) {
+    width: 74px;
+}
+
+.table .leaders .bottomTable .championPointsTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .championPointsTable span {
+    text-align: center;
+    border: 1px black solid;
+}
+
+.table .leaders .bottomTable .championPointsTable span:nth-child(1) {
+    width: 80px;
+}
+
+.table .leaders .bottomTable .championPointsTable span:nth-child(2) {
+    width: 56px;
+}
+
+.table .leaders .bottomTable .championPointsTable span:nth-child(3) {
+    width: 51px;
+}
+
+
+.table .leaders .bottomTable .weeksPointsTable {
+    display: flex;
+    gap: 1px;
+}
+
+.table .leaders .bottomTable .weeksPointsTable span {
+    text-align: center;
+    border: 1px black solid;
+}
+
+.table .leaders .bottomTable .weeksPointsTable span:nth-child(1) {
+    width: 79px;
+}
+
+.table .leaders .bottomTable .weeksPointsTable span:nth-child(2) {
+    width: 56px;
+}
+
+.table .leaders .bottomTable .weeksPointsTable span:nth-child(3) {
+    width: 51px;
+}
+

@@ -23,10 +23,12 @@
 .matchesSlider {
     padding-top: 100px;
     position: relative;
+    width: max-content;
 }
 
 .matchesSlider .sliderWrapper {
     overflow-x: hidden;
+    width: 1185px;
 }
 
 .matchesSlider .prev {
