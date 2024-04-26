@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/rankList.css">
+    <link rel="stylesheet" href="../css/rankListMobile.css">
 </head>
 <body>
     <div class="wrapper">
@@ -51,323 +52,1093 @@
         </header>
 
         <section class="table">
-            <div class="leaders">
-                <div class="title">
-                    <img src="../images/logo.jpg" alt="#">
-                    <h4>Рейтинг-лист</h4>
-                    <p>по состоянию на 21 апреля 2024 года</p>
-                    <span>Категория "ЛИДЕРЫ"</span>
+            <div class="scroll">
+                <div class="leaders">
+                    <div class="title">
+                        <img src="../images/logo.jpg" alt="#">
+                        <h4>Рейтинг-лист</h4>
+                        <p>по состоянию на 21 апреля 2024 года</p>
+                        <span>Категория "ЛИДЕРЫ"</span>
+                    </div>
+                    <div class="top">
+                        <div class="pos">
+                            <span>Позиция</span>
+                            <span>Текущая</span>
+                            <span>Предыдущая</span>
+                        </div>
+                        <div class="name">
+                            <span>Фамилия,</span>
+                            <span>имя</span>
+                        </div>
+                        <div class="country">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePoint">
+                            <span>Парный <br> балл <br> игрока</span>
+                        </div>
+                        <div class="titlesTournaments">
+                            <span>Турниры</span>
+                            <span>Титулы</span>
+                            <span>за 52 недели</span>
+                        </div>
+                        <div class="singleMatches">
+                            <span>Одиночные матчи в сезоне 2024</span>
+                            <span>всего</span>
+                            <span>побед</span>
+                            <span>поражений</span>
+                            <span>% побед</span>
+                        </div>
+                        <div class="doubleMatches">
+                            <span>Одиночные матчи в сезоне 2024</span>
+                            <span>всего</span>
+                            <span>побед</span>
+                            <span>поражений</span>
+                            <span>% побед</span>
+                        </div>
+                        <div class="percentWins">
+                            <span>общий % <br> побед</span>
+                        </div>
+                        <div class="points">
+                            <span>Очки начисленные <br> за прошедший турнир</span>
+                            <span>Очки сгоревшие <br> за прошлогодний турнир</span>
+                            <span>Высокая орбита</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                        </div>
+                        <div class="championPoints">
+                            <span>Очки чемпионской гонки <br> 2024</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>общие</span>
+                        </div>
+                        <div class="weeksPoints">
+                            <span>Очки за 52 недели</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>общие</span>
+                        </div>
+                    </div>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                    </div>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="top">
-                    <div class="pos">
-                        <span>Позиция</span>
-                        <span>Текущая</span>
-                        <span>Предыдущая</span>
-                    </div>
+            </div>
 
-                    <div class="name">
-                        <span>Фамилия,</span>
-                        <span>имя</span>
+            <div class="scroll">
+                <div class="leaders masters">
+                    <div class="title">
+                        <span>Категория "Мэтры"</span>
                     </div>
-
-                    <div class="country">
-                        <span>Город</span>
+                    <div class="top">
+                        <div class="pos">
+                            <span>Позиция</span>
+                            <span>Текущая</span>
+                            <span>Предыдущая</span>
+                        </div>
+                        <div class="name">
+                            <span>Фамилия,</span>
+                            <span>имя</span>
+                        </div>
+                        <div class="country">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePoint">
+                            <span>Парный <br> балл <br> игрока</span>
+                        </div>
+                        <div class="titlesTournaments">
+                            <span>Турниры</span>
+                            <span>Титулы</span>
+                            <span>за 52 недели</span>
+                        </div>
+                        <div class="singleMatches">
+                            <span>Одиночные матчи в сезоне 2024</span>
+                            <span>всего</span>
+                            <span>побед</span>
+                            <span>поражений</span>
+                            <span>% побед</span>
+                        </div>
+                        <div class="doubleMatches">
+                            <span>Одиночные матчи в сезоне 2024</span>
+                            <span>всего</span>
+                            <span>побед</span>
+                            <span>поражений</span>
+                            <span>% побед</span>
+                        </div>
+                        <div class="percentWins">
+                            <span>общий % <br> побед</span>
+                        </div>
+                        <div class="points">
+                            <span>Очки начисленные <br> за прошедший турнир</span>
+                            <span>Очки сгоревшие <br> за прошлогодний турнир</span>
+                            <span>Высокая орбита</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                        </div>
+                        <div class="championPoints">
+                            <span>Очки чемпионской гонки <br> 2024</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>общие</span>
+                        </div>
+                        <div class="weeksPoints">
+                            <span>Очки за 52 недели</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>общие</span>
+                        </div>
                     </div>
-
-                    <div class="doublePoint">
-                        <span>Парный <br> балл <br> игрока</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="titlesTournaments">
-                        <span>Турниры</span>
-                        <span>Титулы</span>
-                        <span>за 52 недели</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="singleMatches">
-                        <span>Одиночные матчи в сезоне 2024</span>
-                        <span>всего</span>
-                        <span>побед</span>
-                        <span>поражений</span>
-                        <span>% побед</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="doubleMatches">
-                        <span>Одиночные матчи в сезоне 2024</span>
-                        <span>всего</span>
-                        <span>побед</span>
-                        <span>поражений</span>
-                        <span>% побед</span>
-                    </div>
-
-                    <div class="percentWins">
-                        <span>общий % <br> побед</span>
-                    </div>
-
-                    <div class="points">
-                        <span>Очки начисленные <br> за прошедший турнир</span>
-                        <span>Очки сгоревшие <br> за прошлогодний турнир</span>
-                        <span>Высокая орбита</span>
-                        <span>одиночные</span>
-                        <span>парные</span>
-                        <span>одиночные</span>
-                        <span>парные</span>
-                    </div>
-
-                    <div class="championPoints">
-                        <span>Очки чемпионской гонки <br> 2024</span>
-                        <span>одиночные</span>
-                        <span>парные</span>
-                        <span>общие</span>
-                    </div>
-
-                    <div class="weeksPoints">
-                        <span>Очки за 52 недели</span>
-                        <span>одиночные</span>
-                        <span>парные</span>
-                        <span>общие</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="bottomTable">
-                    <div class="posTable">
-                        <span>0</span>
-                        <span>0</span>
+            <div class="scroll">
+                <div class="leaders applicants">
+                    <div class="title">
+                        <span>Категория "Претенденты"</span>
                     </div>
-
-                    <div class="nameTable">
-                        <span>Фамилия Имя</span>
+                    <div class="top">
+                        <div class="pos">
+                            <span>Позиция</span>
+                            <span>Текущая</span>
+                            <span>Предыдущая</span>
+                        </div>
+                        <div class="name">
+                            <span>Фамилия,</span>
+                            <span>имя</span>
+                        </div>
+                        <div class="country">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePoint">
+                            <span>Парный <br> балл <br> игрока</span>
+                        </div>
+                        <div class="titlesTournaments">
+                            <span>Турниры</span>
+                            <span>Титулы</span>
+                            <span>за 52 недели</span>
+                        </div>
+                        <div class="singleMatches">
+                            <span>Одиночные матчи в сезоне 2024</span>
+                            <span>всего</span>
+                            <span>побед</span>
+                            <span>поражений</span>
+                            <span>% побед</span>
+                        </div>
+                        <div class="doubleMatches">
+                            <span>Одиночные матчи в сезоне 2024</span>
+                            <span>всего</span>
+                            <span>побед</span>
+                            <span>поражений</span>
+                            <span>% побед</span>
+                        </div>
+                        <div class="percentWins">
+                            <span>общий % <br> побед</span>
+                        </div>
+                        <div class="points">
+                            <span>Очки начисленные <br> за прошедший турнир</span>
+                            <span>Очки сгоревшие <br> за прошлогодний турнир</span>
+                            <span>Высокая орбита</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                        </div>
+                        <div class="championPoints">
+                            <span>Очки чемпионской гонки <br> 2024</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>общие</span>
+                        </div>
+                        <div class="weeksPoints">
+                            <span>Очки за 52 недели</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>общие</span>
+                        </div>
                     </div>
-
-                    <div class="countryTable">
-                        <span>Город</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="doublePointTable">
-                        <span>0</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="titlesTournamentsTable">
-                        <span>0</span>
-                        <span>0</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="singleMatchesTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0%</span>
-                    </div>
-
-                    <div class="doubleMatchesTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0%</span>
-                    </div>
-
-                    <div class="percentWinsTable">
-                        <span>0%</span>
-                    </div>
-
-                    <div class="pointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-
-                    <div class="championPointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-                    
-                    <div class="weeksPointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="bottomTable">
-                    <div class="posTable">
-                        <span>0</span>
-                        <span>0</span>
+            <div class="scroll">
+                <div class="leaders debutants">
+                    <div class="title">
+                        <span>Категория "Дебютанты"</span>
                     </div>
-
-                    <div class="nameTable">
-                        <span>Фамилия Имя</span>
+                    <div class="top">
+                        <div class="pos">
+                            <span>Позиция</span>
+                            <span>Текущая</span>
+                            <span>Предыдущая</span>
+                        </div>
+                        <div class="name">
+                            <span>Фамилия,</span>
+                            <span>имя</span>
+                        </div>
+                        <div class="country">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePoint">
+                            <span>Парный <br> балл <br> игрока</span>
+                        </div>
+                        <div class="titlesTournaments">
+                            <span>Турниры</span>
+                            <span>Титулы</span>
+                            <span>за 52 недели</span>
+                        </div>
+                        <div class="singleMatches">
+                            <span>Одиночные матчи в сезоне 2024</span>
+                            <span>всего</span>
+                            <span>побед</span>
+                            <span>поражений</span>
+                            <span>% побед</span>
+                        </div>
+                        <div class="doubleMatches">
+                            <span>Одиночные матчи в сезоне 2024</span>
+                            <span>всего</span>
+                            <span>побед</span>
+                            <span>поражений</span>
+                            <span>% побед</span>
+                        </div>
+                        <div class="percentWins">
+                            <span>общий % <br> побед</span>
+                        </div>
+                        <div class="points">
+                            <span>Очки начисленные <br> за прошедший турнир</span>
+                            <span>Очки сгоревшие <br> за прошлогодний турнир</span>
+                            <span>Высокая орбита</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                        </div>
+                        <div class="championPoints">
+                            <span>Очки чемпионской гонки <br> 2024</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>общие</span>
+                        </div>
+                        <div class="weeksPoints">
+                            <span>Очки за 52 недели</span>
+                            <span>одиночные</span>
+                            <span>парные</span>
+                            <span>общие</span>
+                        </div>
                     </div>
-
-                    <div class="countryTable">
-                        <span>Город</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="doublePointTable">
-                        <span>0</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="titlesTournamentsTable">
-                        <span>0</span>
-                        <span>0</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
-
-                    <div class="singleMatchesTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0%</span>
-                    </div>
-
-                    <div class="doubleMatchesTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0%</span>
-                    </div>
-
-                    <div class="percentWinsTable">
-                        <span>0%</span>
-                    </div>
-
-                    <div class="pointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-
-                    <div class="championPointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-                    
-                    <div class="weeksPointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-                </div>
-                <div class="bottomTable">
-                    <div class="posTable">
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-
-                    <div class="nameTable">
-                        <span>Фамилия Имя</span>
-                    </div>
-
-                    <div class="countryTable">
-                        <span>Город</span>
-                    </div>
-
-                    <div class="doublePointTable">
-                        <span>0</span>
-                    </div>
-
-                    <div class="titlesTournamentsTable">
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-
-                    <div class="singleMatchesTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0%</span>
-                    </div>
-
-                    <div class="doubleMatchesTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0%</span>
-                    </div>
-
-                    <div class="percentWinsTable">
-                        <span>0%</span>
-                    </div>
-
-                    <div class="pointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-
-                    <div class="championPointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-                    
-                    <div class="weeksPointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-                </div>
-                <div class="bottomTable">
-                    <div class="posTable">
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-
-                    <div class="nameTable">
-                        <span>Фамилия Имя</span>
-                    </div>
-
-                    <div class="countryTable">
-                        <span>Город</span>
-                    </div>
-
-                    <div class="doublePointTable">
-                        <span>0</span>
-                    </div>
-
-                    <div class="titlesTournamentsTable">
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-
-                    <div class="singleMatchesTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0%</span>
-                    </div>
-
-                    <div class="doubleMatchesTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0%</span>
-                    </div>
-
-                    <div class="percentWinsTable">
-                        <span>0%</span>
-                    </div>
-
-                    <div class="pointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-
-                    <div class="championPointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
-                    </div>
-                    
-                    <div class="weeksPointsTable">
-                        <span>0</span>
-                        <span>0</span>
-                        <span>0</span>
+                    <div class="bottomTable">
+                        <div class="posTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="nameTable">
+                            <span>Фамилия Имя</span>
+                        </div>
+                        <div class="countryTable">
+                            <span>Город</span>
+                        </div>
+                        <div class="doublePointTable">
+                            <span>0</span>
+                        </div>
+                        <div class="titlesTournamentsTable">
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="singleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="doubleMatchesTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="percentWinsTable">
+                            <span>0%</span>
+                        </div>
+                        <div class="pointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                        <div class="championPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
+                
+                        <div class="weeksPointsTable">
+                            <span>0</span>
+                            <span>0</span>
+                            <span>0</span>
+                        </div>
                     </div>
                 </div>
             </div>

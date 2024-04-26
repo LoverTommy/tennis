@@ -1,0 +1,35 @@
+@media screen and (max-width: 1990px) {
+    .table .scroll {
+        overflow-x: scroll;
+        width: 98vw;
+        padding-bottom: 10px;
+        padding: 10px;
+    }
+
+    .table .leaders {
+        width: 1903px;
+    }
+
+    .table .leaders .title {
+        align-self: flex-start;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .table .scroll::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .table .scroll::-webkit-scrollbar-thumb {
+        background-color: #7814ff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .table .scroll {
+        width: 90vw;
+        padding: 10px;
+    }
+}
